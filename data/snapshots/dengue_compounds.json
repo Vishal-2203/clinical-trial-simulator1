@@ -1,0 +1,82 @@
+[
+  {
+    "chembl_id": "CHEMBL19980",
+    "name": "BREFELDIN A",
+    "mw": 280.36,
+    "alogp": 1.96,
+    "ic50_nM": 54.6,
+    "target": "dengue virus type 2"
+  },
+  {
+    "chembl_id": "CHEMBL506247",
+    "name": "TANNIC ACID",
+    "mw": 1701.21,
+    "alogp": null,
+    "ic50_nM": 130.0,
+    "target": "Genome polyprotein"
+  },
+  {
+    "chembl_id": "CHEMBL450522",
+    "name": "SOTETSUFLAVONE",
+    "mw": 552.49,
+    "alogp": 5.44,
+    "ic50_nM": 160.0,
+    "target": "Nonstructural protein 5"
+  },
+  {
+    "chembl_id": "CHEMBL1214186",
+    "name": "SINEFUNGIN",
+    "mw": 381.39,
+    "alogp": -2.06,
+    "ic50_nM": 325.33,
+    "target": "Unchecked"
+  },
+  {
+    "chembl_id": "CHEMBL63677",
+    "name": "ROBUSTAFLAVONE",
+    "mw": 538.46,
+    "alogp": 5.13,
+    "ic50_nM": 330.0,
+    "target": "Nonstructural protein 5"
+  },
+  {
+    "chembl_id": "CHEMBL291426",
+    "name": "HINOKIFLAVONE",
+    "mw": 538.46,
+    "alogp": 5.55,
+    "ic50_nM": 355.0,
+    "target": "Unchecked"
+  },
+  {
+    "chembl_id": "CHEMBL41",
+    "name": "FLUOXETINE",
+    "mw": 309.33,
+    "alogp": 4.44,
+    "ic50_nM": 380.0,
+    "target": "dengue virus type 2"
+  },
+  {
+    "chembl_id": "CHEMBL506569",
+    "name": "LANATOSIDE C",
+    "mw": 985.13,
+    "alogp": 0.61,
+    "ic50_nM": 438.0,
+    "target": "dengue virus type 2"
+  },
+  {
+    "chembl_id": "CHEMBL1324",
+    "name": "TOLCAPONE",
+    "mw": 273.24,
+    "alogp": 2.55,
+    "ic50_nM": 640.0,
+    "target": "Genome polyprotein"
+  },
+  {
+    "chembl_id": "CHEMBL1263",
+    "name": "SALMETEROL",
+    "mw": 415.57,
+    "alogp": 4.11,
+    "ic50_nM": 670.0,
+    "target": "dengue virus type 2"
+  }
+]

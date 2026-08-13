@@ -1,0 +1,25 @@
+.venv/
+.venv-*/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.pytest_tmp/
+.pytest_basetemp/
+artifacts/pytest-temp/
+artifacts/benchmark-smoke*/
+artifacts/trl_smoke/
+artifacts/policy/latest_llm_smoke.json
+artifacts/policy/latest_llm_gpu_smoke.json
+
+# Local/generated biomedical data and model artifacts
+chembl_37/
+chembl_37_sqlite.tar.gz
+data/training/
+artifacts/dti/
+artifacts/replay_buffer.db
+
+# Keep JSON evidence but ignore heavy weights
+artifacts/**/*.pt
+artifacts/**/*.safetensors
+artifacts/**/*.pth
+artifacts/**/*.bin

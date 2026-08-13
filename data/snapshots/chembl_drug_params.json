@@ -1,0 +1,190 @@
+{
+  "metformin": {
+    "disease": "type2_diabetes",
+    "component": "a",
+    "chembl_name": "METFORMIN",
+    "description": "Biguanide - AMPK activation, lowers hepatic glucose output",
+    "chembl_id": "CHEMBL1431",
+    "pref_name": "METFORMIN",
+    "molecular_weight": 129.17,
+    "alogp": -1.03,
+    "psa": 88.99,
+    "hba": 2,
+    "hbd": 4,
+    "binding_affinities": {
+      "IC50": {
+        "mean_nM": 110678492.45,
+        "n_assays": 592
+      },
+      "EC50": {
+        "mean_nM": 5000135.0,
+        "n_assays": 2
+      },
+      "Ki": {
+        "mean_nM": 18000000.0,
+        "n_assays": 1
+      }
+    },
+    "mechanism_targets": []
+  },
+  "semaglutide": {
+    "disease": "type2_diabetes",
+    "component": "b",
+    "chembl_name": "SEMAGLUTIDE",
+    "description": "GLP-1 Receptor Agonist - stimulates insulin secretion",
+    "chembl_id": "CHEMBL2108724",
+    "pref_name": "SEMAGLUTIDE",
+    "molecular_weight": null,
+    "alogp": null,
+    "psa": null,
+    "hba": null,
+    "hbd": null,
+    "binding_affinities": {
+      "EC50": {
+        "mean_nM": 0.03,
+        "n_assays": 5
+      },
+      "IC50": {
+        "mean_nM": 96.88,
+        "n_assays": 4
+      },
+      "Kd": {
+        "mean_nM": 223.18,
+        "n_assays": 2
+      }
+    },
+    "mechanism_targets": [
+      {
+        "target": "Glucagon-like peptide 1 receptor",
+        "type": "SINGLE PROTEIN",
+        "action": "AGONIST"
+      }
+    ]
+  },
+  "lisinopril": {
+    "disease": "hypertension",
+    "component": "a",
+    "chembl_name": "LISINOPRIL",
+    "description": "ACE Inhibitor - blocks RAAS pathway to lower blood pressure",
+    "chembl_id": "CHEMBL419213",
+    "pref_name": "LISINOPRIL",
+    "molecular_weight": 405.5,
+    "alogp": 1.24,
+    "psa": 132.96,
+    "hba": 5,
+    "hbd": 4,
+    "binding_affinities": {
+      "IC50": {
+        "mean_nM": 4213.6,
+        "n_assays": 5
+      }
+    },
+    "mechanism_targets": [
+      {
+        "target": "Angiotensin-converting enzyme",
+        "type": "SINGLE PROTEIN",
+        "action": "INHIBITOR"
+      }
+    ]
+  },
+  "amlodipine": {
+    "disease": "hypertension",
+    "component": "b",
+    "chembl_name": "AMLODIPINE",
+    "description": "L-type Calcium Channel Blocker - relaxes arterial smooth muscle",
+    "chembl_id": "CHEMBL1491",
+    "pref_name": "AMLODIPINE",
+    "molecular_weight": 408.88,
+    "alogp": 2.27,
+    "psa": 99.88,
+    "hba": 7,
+    "hbd": 2,
+    "binding_affinities": {
+      "IC50": {
+        "mean_nM": 5186.04,
+        "n_assays": 30
+      },
+      "Ki": {
+        "mean_nM": 2198.9,
+        "n_assays": 10
+      },
+      "Kd": {
+        "mean_nM": 23000.0,
+        "n_assays": 1
+      },
+      "EC50": {
+        "mean_nM": 8220.0,
+        "n_assays": 1
+      }
+    },
+    "mechanism_targets": []
+  },
+  "osimertinib": {
+    "disease": "nsclc",
+    "component": "a",
+    "chembl_name": "OSIMERTINIB",
+    "description": "EGFR Tyrosine Kinase Inhibitor - targets mutant EGFR T790M in NSCLC",
+    "chembl_id": "CHEMBL3353410",
+    "pref_name": "OSIMERTINIB",
+    "molecular_weight": 499.62,
+    "alogp": 4.51,
+    "psa": 87.55,
+    "hba": 8,
+    "hbd": 2,
+    "binding_affinities": {
+      "IC50": {
+        "mean_nM": 7416.57,
+        "n_assays": 662
+      },
+      "EC50": {
+        "mean_nM": 946.74,
+        "n_assays": 37
+      },
+      "Ki": {
+        "mean_nM": 82.88,
+        "n_assays": 18
+      },
+      "Kd": {
+        "mean_nM": 1274.0,
+        "n_assays": 6
+      }
+    },
+    "mechanism_targets": [
+      {
+        "target": "Epidermal growth factor receptor",
+        "type": "SINGLE PROTEIN",
+        "action": "INHIBITOR"
+      }
+    ]
+  },
+  "tecovirimat": {
+    "disease": "dengue",
+    "component": "b",
+    "chembl_name": "TECOVIRIMAT",
+    "description": "Viral envelope protein inhibitor - blocks orthopoxvirus/dengue viral egress",
+    "chembl_id": "CHEMBL1257073",
+    "pref_name": "TECOVIRIMAT",
+    "molecular_weight": 376.33,
+    "alogp": 2.4,
+    "psa": 66.48,
+    "hba": 3,
+    "hbd": 1,
+    "binding_affinities": {
+      "EC50": {
+        "mean_nM": 256.36,
+        "n_assays": 22
+      },
+      "IC50": {
+        "mean_nM": 5.35,
+        "n_assays": 3
+      }
+    },
+    "mechanism_targets": [
+      {
+        "target": "Envelope phospholipase OPG057",
+        "type": "SINGLE PROTEIN",
+        "action": "INHIBITOR"
+      }
+    ]
+  }
+}

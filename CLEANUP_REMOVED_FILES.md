@@ -1,0 +1,9959 @@
+﻿# Cleanup Removal Log
+
+Generated: 2026-05-11 18:24:37 +05:30
+
+This log tracks folders removed to free disk space. Each item includes a recovery command.
+
+Total reclaimed (approx): 13899.05 MB
+
+## Removed Items
+
+- Path: artifacts/trl_gpu_8gb
+  - Size before removal: 11906.85 MB
+  - Recover with: python training/train_grpo.py --backend trl --config training/configs/grpo_gpu_8gb.yaml --output artifacts/policy/latest_llm.json
+- Path: .venv-py314-backup
+  - Size before removal: 1723.15 MB
+  - Recover with: python -m venv .venv-py314-backup; .\\.venv-py314-backup\\Scripts\\Activate.ps1; pip install -e .[train]
+- Path: frontend/node_modules
+  - Size before removal: 187.21 MB
+  - Recover with: cd frontend; npm install
+- Path: artifacts/trl_fast
+  - Size before removal: 71.81 MB
+  - Recover with: python training/train_grpo.py --backend trl --config training/configs/grpo_gpu_8gb.yaml --max-steps 5 --output artifacts/policy/latest_llm_smoke.json
+- Path: artifacts/trl_smoke
+  - Size before removal: 10.03 MB
+  - Recover with: python training/train_grpo.py --backend trl --config training/configs/grpo_gpu_8gb.yaml --max-steps 1 --output artifacts/policy/latest_llm_smoke.json
+- Path: artifacts/trl_unsloth
+  - Size before removal: 0 MB
+  - Recover with: python training/train_grpo.py --backend trl-unsloth --config training/configs/grpo_medium.yaml
+- Path: artifacts/api_cache
+  - Size before removal: 0 MB
+  - Recover with: python scripts/run_pipeline.py
+
+## Intentionally Kept
+
+- data/snapshots/disease_priors.json (required by runtime defaults in src/cts/data/priors.py).
+
+## Notes
+
+- Re-run this cleanup later if new training artifacts/checkpoints are generated.
+
+## Second Pass Cleanup (2026-05-11 18:27:20 +05:30)
+
+Total reclaimed this pass (approx): 337.49 MB
+
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\__pycache__
+  - Size before removal: 7.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_core\tests\__pycache__
+  - Size before removal: 4.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\__pycache__
+  - Size before removal: 4.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\__pycache__
+  - Size before removal: 4.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\tests\__pycache__
+  - Size before removal: 3.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\tests\__pycache__
+  - Size before removal: 3.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pygments\lexers\__pycache__
+  - Size before removal: 3.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\__pycache__
+  - Size before removal: 3.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\vegalite\v6\schema\__pycache__
+  - Size before removal: 3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\__pycache__
+  - Size before removal: 2.97 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\__pycache__
+  - Size before removal: 2.49 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\__pycache__
+  - Size before removal: 2.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_dynamo\__pycache__
+  - Size before removal: 2.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\__pycache__
+  - Size before removal: 2.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\pygments\lexers\__pycache__
+  - Size before removal: 2.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\core\tests\__pycache__
+  - Size before removal: 1.95 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\__pycache__
+  - Size before removal: 1.84 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\tests\__pycache__
+  - Size before removal: 1.82 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_dynamo\variables\__pycache__
+  - Size before removal: 1.78 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\frame\methods\__pycache__
+  - Size before removal: 1.51 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\benchmarks\__pycache__
+  - Size before removal: 1.43 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\PIL\__pycache__
+  - Size before removal: 1.41 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\lib\tests\__pycache__
+  - Size before removal: 1.38 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\core\__pycache__
+  - Size before removal: 1.36 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\quantum\tests\__pycache__
+  - Size before removal: 1.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\printing\tests\__pycache__
+  - Size before removal: 1.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\__pycache__
+  - Size before removal: 1.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tornado\test\__pycache__
+  - Size before removal: 1.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\fx_passes\__pycache__
+  - Size before removal: 1.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\__pycache__
+  - Size before removal: 1.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\ttLib\tables\__pycache__
+  - Size before removal: 1.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\__pycache__
+  - Size before removal: 1.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\rich\__pycache__
+  - Size before removal: 1.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\__pycache__
+  - Size before removal: 1.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\printing\__pycache__
+  - Size before removal: 1.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\aiohttp\__pycache__
+  - Size before removal: 1.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\trainer\__pycache__
+  - Size before removal: 1.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tornado\__pycache__
+  - Size before removal: 1.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_core\__pycache__
+  - Size before removal: 1.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\__pycache__
+  - Size before removal: 1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\lib\__pycache__
+  - Size before removal: 0.98 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\integrals\tests\__pycache__
+  - Size before removal: 0.98 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\matrices\tests\__pycache__
+  - Size before removal: 0.98 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\generation\__pycache__
+  - Size before removal: 0.96 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\tests\__pycache__
+  - Size before removal: 0.96 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\__pycache__
+  - Size before removal: 0.94 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\tests\__pycache__
+  - Size before removal: 0.94 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\frame\__pycache__
+  - Size before removal: 0.92 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\ode\tests\__pycache__
+  - Size before removal: 0.92 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\elementary\tests\__pycache__
+  - Size before removal: 0.92 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\modules\__pycache__
+  - Size before removal: 0.91 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\integrals\__pycache__
+  - Size before removal: 0.9 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\groupby\__pycache__
+  - Size before removal: 0.89 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\combinatorics\__pycache__
+  - Size before removal: 0.86 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\__pycache__
+  - Size before removal: 0.86 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpmath\tests\__pycache__
+  - Size before removal: 0.85 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\__pycache__
+  - Size before removal: 0.84 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\backends\__pycache__
+  - Size before removal: 0.83 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\experimental\__pycache__
+  - Size before removal: 0.83 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\__pycache__
+  - Size before removal: 0.81 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\arrays\__pycache__
+  - Size before removal: 0.81 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\__pycache__
+  - Size before removal: 0.8 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\torchscript_exporter\__pycache__
+  - Size before removal: 0.79 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\stats\__pycache__
+  - Size before removal: 0.76 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\matrices\__pycache__
+  - Size before removal: 0.76 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\utils\__pycache__
+  - Size before removal: 0.74 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\series\methods\__pycache__
+  - Size before removal: 0.74 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\indexes\__pycache__
+  - Size before removal: 0.72 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_higher_order_ops\__pycache__
+  - Size before removal: 0.72 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic\__pycache__
+  - Size before removal: 0.72 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\quantum\__pycache__
+  - Size before removal: 0.71 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\__pycache__
+  - Size before removal: 0.7 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\utilities\tests\__pycache__
+  - Size before removal: 0.7 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\ma\tests\__pycache__
+  - Size before removal: 0.68 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\__pycache__
+  - Size before removal: 0.68 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jinja2\__pycache__
+  - Size before removal: 0.68 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\__pycache__
+  - Size before removal: 0.66 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_functorch\_aot_autograd\__pycache__
+  - Size before removal: 0.66 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\fsdp\__pycache__
+  - Size before removal: 0.64 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\google\protobuf\__pycache__
+  - Size before removal: 0.64 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic\v1\__pycache__
+  - Size before removal: 0.63 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexing\__pycache__
+  - Size before removal: 0.63 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\simplify\__pycache__
+  - Size before removal: 0.62 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\ode\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\random\tests\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\elements\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\rpc\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\utils\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\distutils\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\series\tests\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\mechanics\tests\__pycache__
+  - Size before removal: 0.6 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\__pycache__
+  - Size before removal: 0.59 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\__pycache__
+  - Size before removal: 0.59 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\axes\__pycache__
+  - Size before removal: 0.59 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\elementary\__pycache__
+  - Size before removal: 0.58 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\special\__pycache__
+  - Size before removal: 0.58 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpmath\__pycache__
+  - Size before removal: 0.58 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\simplify\tests\__pycache__
+  - Size before removal: 0.58 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\__pycache__
+  - Size before removal: 0.58 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\formats\__pycache__
+  - Size before removal: 0.57 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_functorch\__pycache__
+  - Size before removal: 0.56 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\datasets\__pycache__
+  - Size before removal: 0.56 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\fx_passes\serialized_patterns\__pycache__
+  - Size before removal: 0.56 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\pipelines\__pycache__
+  - Size before removal: 0.56 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\f2py\__pycache__
+  - Size before removal: 0.56 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\window\__pycache__
+  - Size before removal: 0.56 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\special\tests\__pycache__
+  - Size before removal: 0.55 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributions\__pycache__
+  - Size before removal: 0.54 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\elements\widgets\__pycache__
+  - Size before removal: 0.54 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen2_5_omni\__pycache__
+  - Size before removal: 0.53 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\checkpoint\__pycache__
+  - Size before removal: 0.53 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\export\__pycache__
+  - Size before removal: 0.53 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\varLib\__pycache__
+  - Size before removal: 0.53 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\models\__pycache__
+  - Size before removal: 0.52 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\optim\__pycache__
+  - Size before removal: 0.52 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpmath\functions\__pycache__
+  - Size before removal: 0.52 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\generators\__pycache__
+  - Size before removal: 0.52 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\stats\tests\__pycache__
+  - Size before removal: 0.51 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyparsing\__pycache__
+  - Size before removal: 0.51 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\whisper\__pycache__
+  - Size before removal: 0.51 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic\_internal\__pycache__
+  - Size before removal: 0.51 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arithmetic\__pycache__
+  - Size before removal: 0.5 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\__pycache__
+  - Size before removal: 0.49 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\internal\__pycache__
+  - Size before removal: 0.49 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\integrations\__pycache__
+  - Size before removal: 0.49 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\__pycache__
+  - Size before removal: 0.49 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\sparse\__pycache__
+  - Size before removal: 0.48 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\jit\__pycache__
+  - Size before removal: 0.48 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\mechanics\__pycache__
+  - Size before removal: 0.48 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\click\__pycache__
+  - Size before removal: 0.47 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\utilities\__pycache__
+  - Size before removal: 0.47 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\classes\tests\__pycache__
+  - Size before removal: 0.46 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fsspec\implementations\__pycache__
+  - Size before removal: 0.46 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\__pycache__
+  - Size before removal: 0.46 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\matrices\tests\__pycache__
+  - Size before removal: 0.46 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\anyio\_backends\__pycache__
+  - Size before removal: 0.45 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\assumptions\tests\__pycache__
+  - Size before removal: 0.45 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\polynomial\__pycache__
+  - Size before removal: 0.45 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\plotting\__pycache__
+  - Size before removal: 0.45 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\ma\__pycache__
+  - Size before removal: 0.44 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\autograd\__pycache__
+  - Size before removal: 0.44 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\geometry\__pycache__
+  - Size before removal: 0.44 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_distutils\__pycache__
+  - Size before removal: 0.44 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\tensor\__pycache__
+  - Size before removal: 0.44 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\__pycache__
+  - Size before removal: 0.43 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\misc\__pycache__
+  - Size before removal: 0.43 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\anyio\_core\__pycache__
+  - Size before removal: 0.42 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\parser\__pycache__
+  - Size before removal: 0.42 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\groupby\__pycache__
+  - Size before removal: 0.42 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\command\__pycache__
+  - Size before removal: 0.41 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\matrices\__pycache__
+  - Size before removal: 0.41 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\multi\__pycache__
+  - Size before removal: 0.41 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\formats\__pycache__
+  - Size before removal: 0.41 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multiprocess\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multiprocess\tests\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\numberfields\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\generated\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\psutil\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\quantization\fx\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fsspec\__pycache__
+  - Size before removal: 0.4 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\classes\__pycache__
+  - Size before removal: 0.39 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\pytables\__pycache__
+  - Size before removal: 0.39 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\__pycache__
+  - Size before removal: 0.39 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\sets\tests\__pycache__
+  - Size before removal: 0.39 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\tseries\offsets\__pycache__
+  - Size before removal: 0.39 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\frame\indexing\__pycache__
+  - Size before removal: 0.38 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\cuda\__pycache__
+  - Size before removal: 0.38 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\figure_factory\__pycache__
+  - Size before removal: 0.38 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\__pycache__
+  - Size before removal: 0.38 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_subclasses\__pycache__
+  - Size before removal: 0.38 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\wav2vec2\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\reshape\merge\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\feaLib\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\reshape\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\tests\parquet\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\resample\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\regex\tests\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\copy_view\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\models\detection\__pycache__
+  - Size before removal: 0.37 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\datetimes\__pycache__
+  - Size before removal: 0.36 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpmath\libmp\__pycache__
+  - Size before removal: 0.36 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\lora\__pycache__
+  - Size before removal: 0.36 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\series\__pycache__
+  - Size before removal: 0.36 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\tapas\__pycache__
+  - Size before removal: 0.36 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\runtime\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\matrices\expressions\tests\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\internals\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\packaging\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\data2vec\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\geometry\tests\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\ntheory\__pycache__
+  - Size before removal: 0.35 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\generators\tests\__pycache__
+  - Size before removal: 0.34 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\quantization\__pycache__
+  - Size before removal: 0.34 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\concrete\tests\__pycache__
+  - Size before removal: 0.34 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\__pycache__
+  - Size before removal: 0.34 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\tests\__pycache__
+  - Size before removal: 0.34 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\__pycache__
+  - Size before removal: 0.34 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\exporter\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_refs\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\plotting\frame\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\transforms\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\polynomial\tests\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\combinatorics\tests\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fastapi\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\tensor\_ops\__pycache__
+  - Size before removal: 0.33 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\continuum_mechanics\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bart\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\pipelining\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\dtypes\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\readwrite\tests\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\domains\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\f2py\tests\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\runtime\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\tensor\__pycache__
+  - Size before removal: 0.32 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\lib\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\dtypes\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\public\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_export\serde\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_decomp\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\elements\lib\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\json\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\data_types\__pycache__
+  - Size before removal: 0.31 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\t5\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpl_toolkits\mplot3d\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bert\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\auto\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\matrices\expressions\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jsonschema\tests\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mbart\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\led\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\grounding_dino\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_export\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\layoutlmv3\__pycache__
+  - Size before removal: 0.3 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\packaged\autograd\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\formats\style\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\starlette\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\longformer\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\idefics\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\idna\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\ttLib\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\isomorphism\tests\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\blip\__pycache__
+  - Size before removal: 0.29 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\reshape\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\tools\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\dill\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpmath\calculus\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\detr\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\esm\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\sam\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\pens\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\tensor\tests\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\git\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\opinfo\definitions\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\google\protobuf\internal\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\seamless_m4t\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\conditional_detr\__pycache__
+  - Size before removal: 0.28 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\electra\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\series\indexing\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\idna\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\blenderbot\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\control\tests\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\clip\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_pandas_like\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\phi4_multimodal\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\series\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\printing\pretty\tests\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\big_bird\__pycache__
+  - Size before removal: 0.27 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\transforms\v2\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\utils\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\yaml\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\ufoLib\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\categorical\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\models\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\tensor\array\expressions\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\transforms\v2\functional\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\control\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\marian\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\utils\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\roberta\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\plotting\_matplotlib\__pycache__
+  - Size before removal: 0.26 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\tests\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\drawing\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\utils\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\oneformer\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\vegalite\v6\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\rt_detr\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\centrality\tests\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\urllib3\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pegasus\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\readwrite\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deformable_detr\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\vector\tests\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\regex\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\strings\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\excel\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\reshape\concat\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\xlm_roberta\__pycache__
+  - Size before removal: 0.25 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_numpy\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\config\_validate_pyproject\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\latex\_antlr\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\base\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\xlnet\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\packaging\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\roformer\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\subset\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\_sympy\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\blenderbot_small\__pycache__
+  - Size before removal: 0.24 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\seamless_m4t_v2\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\printing\pretty\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_distutils\command\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\speecht5\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\albert\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\apply\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutlass\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\sets\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\deta\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\typing\tests\data\pass\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\utils\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_arrow\__pycache__
+  - Size before removal: 0.23 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\requests\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\maskformer\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mobilebert\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_plotly_utils\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\parsers\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\centrality\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\groupby\methods\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\vector\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\udop\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\isomorphism\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\rag\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\cffLib\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\vector\tests\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\roberta_prelayernorm\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\utils\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\emu3\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gpt2\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deberta_v2\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\d_fine\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\requests\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\layoutlmv2\__pycache__
+  - Size before removal: 0.22 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexing\multiindex\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\profiler\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\more_itertools\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_tools\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_compliant\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\fsdp\_fully_shard\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\autolev\_antlr\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\express\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\longt5\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\util\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\janus\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_library\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\carpet\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\funnel\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\hipify\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\quantizers\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\attr\__pycache__
+  - Size before removal: 0.21 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\interval\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mask2former\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\utils\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\distilbert\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deberta\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\aria\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\groupvit\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\flava\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen2_5_vl\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\period\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\luke\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\perceiver\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpmath\matrices\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\lxmert\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\logic\tests\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\sparse\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\vector\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\codegen\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\assumptions\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\polar\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\window\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\features\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\numberfields\tests\__pycache__
+  - Size before removal: 0.2 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\xlm\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\packaging\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\convbert\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\groupby\aggregate\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\commands\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\camembert\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2dcontour\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_distutils\_vendor\packaging\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\hubert\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\concrete\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\jukebox\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\flaubert\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\drawing\tests\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\functional\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\artifacts\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\speech_to_text\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\rendezvous\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\packaging\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\transfo_xl\__pycache__
+  - Size before removal: 0.19 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\layoutlm\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\api\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\rembert\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\datasets\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpl_toolkits\mplot3d\tests\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jsonschema\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\distlib\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\yolos\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\markuplm\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\testing\v1\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\pynvml\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\connectivity\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen2_vl\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\experimental\migrate_gradual_types\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\io\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pygments\formatters\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\csm\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\ntheory\tests\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nested\_internal\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\combinatorial\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gemma3\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\beit\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\parallel\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\combinatorial\tests\__pycache__
+  - Size before removal: 0.18 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\commands\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contour\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\utils\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\arrays\arrow\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\more_itertools\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\anyio\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pygments\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\dill\tests\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\strings\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tqdm\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\swin\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\otlLib\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\designspaceLib\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\urllib3\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\linalg\tests\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\pygletplot\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\biomechanics\tests\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\ns\fx\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\logic\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\optim\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\autolev\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\rocm\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\proto\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\zamba2\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pkg_resources\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\kernel\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\template_heuristics\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mistral\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mllama\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\inference\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sunburst\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\approximation\__pycache__
+  - Size before removal: 0.17 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\smolvlm\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\esm\openfold_utils\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\flow\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\wav2vec2_bert\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\tests\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gptj\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2d\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_polars\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\instructblipvideo\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mpnet\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\rt_detr_v2\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\wav2vec2_conformer\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\bipartite\tests\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\owlvit\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\bipartite\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\tests\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\ops\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\biomechanics\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\domains\tests\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\diophantine\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\timedelta\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpl_toolkits\axisartist\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\codegen\tests\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\web\server\starlette\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\inference\_generated\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\charset_normalizer\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\holonomic\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\cli\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\pygments\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic_core\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bridgetower\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\tensor\array\expressions\tests\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\datetimes\methods\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\computation\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\watchdog\observers\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\timestamp\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\clvp\__pycache__
+  - Size before removal: 0.16 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantized\modules\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vit\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\sam_hq\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mobilevit\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\period\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\modernbert\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\testing\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\parser\common\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\attention\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\generic\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\package\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\connectivity\tests\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_local_tensor\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\opt\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\xglm\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\llama4\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\shortest_paths\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\models\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\llava_onevision\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bigbird_pegasus\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\excel\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\clap\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\tests\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\approximation\tests\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpl_toolkits\axes_grid1\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\quantization\backend_config\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\realm\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\pygments\formatters\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\__pycache__
+  - Size before removal: 0.15 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\expr\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pygments\styles\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\shortest_paths\tests\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\marker\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\siglip2\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmap\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\cone\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\agca\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\config\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\streamtube\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\web\server\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\runtime\state\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\runtime\caching\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\mesh3d\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\calculus\tests\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\unispeech_sat\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\marker\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\community\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\distutils\command\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\owlv2\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deit\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bamba\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\distutils\fcompiler\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\blip_2\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\moshi\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pygments\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\musicgen_melody\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\tensorboard\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\efficientformer\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\testing\tests\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\_nnapi\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\xml\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\kosmos2\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\roc_bert\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\dim\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\reformer\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\prophetnet\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_symmetric_memory\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\xlm_prophetnet\__pycache__
+  - Size before removal: 0.14 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\transforms\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcoords\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pie\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\idefics2\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\idefics3\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\autoformer\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\tri\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\datasets\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_dask\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gemma\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contourcarpet\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\test_utils\scripts\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\cli\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\components\v2\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\xaxis\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\promise-2.3.0\tests\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\got_ocr2\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\anyio\abc\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\tree\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vit_mae\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\opinfo\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\watchdog_0_9_0\wandb_watchdog\observers\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\wavlm\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mvp\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\omdet_turbo\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\unispeech\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\segformer\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\voltLib\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\quantization\fx\_model_report\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\gitdb\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pop2piano\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\tensor\array\tests\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_prims\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\models\wav2vec2\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\assumptions\handlers\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\moonshine\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mt5\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\musicgen\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\categories\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_export\passes\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\linalg\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\req\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\cli\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\computation\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\internal\system\assets\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\tslibs\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\platformdirs\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\marker\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\resolution\resolvelib\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\utils\tests\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\__pycache__
+  - Size before removal: 0.13 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pygments\lexers\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\xpu\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_dynamo\repro\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\commands\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\reductions\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pix2struct\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\masked\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\community\tests\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\backports\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\openai\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\benchmark\utils\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bark\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\language\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\granitemoehybrid\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\fastspeech2_conformer\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_duckdb\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\mega\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dpt\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\chinese_clip\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\internvl\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\runtime\caching\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\llava_next_video\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\llama\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\informer\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_spark_like\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\oft\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\dest\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymap\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\runner\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sunburst\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\tensor\array\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\diffgeom\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymapbox\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\varLib\instancer\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\backports\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\marker\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vilt\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmapgl\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\groupby\transform\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\numeric\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\testing\_private\__pycache__
+  - Size before removal: 0.12 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\donut\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\marker\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\tree\tests\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\tvlt\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\encoder_decoder\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\marker\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\urllib3\util\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\marker\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\patchtsmixer\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\patchtst\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vision_encoder_decoder\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\siglip\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\time_series_transformer\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\plbart\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\zoedepth\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\proto\v3\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\instructblip\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcats\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\m2m_100\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\marker\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_prims_common\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\distutils\tests\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\kernel\flex\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\models\video\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\dateutil\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\data\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\dateutil\tz\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnelarea\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\git\objects\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\tensor\experimental\_context_parallel\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\linalg\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\rpc\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\inference\_providers\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\interface\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_dynamo\backends\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\diophantine\tests\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\chameleon\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\calculus\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\crypto\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\anyio\streams\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\projections\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\config\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bloom\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\loss\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\marker\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\assertion\__pycache__
+  - Size before removal: 0.11 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\arrays\sparse\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fsspec\tests\abstract\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\ctrl\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\timedeltas\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\sew_d\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\onnx\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\tensor\parallel\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\umt5\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\x_clip\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\vendor\pympler\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\filelock\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\logic\algorithms\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\continuum_mechanics\tests\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\categorical\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\ddp_comm_hooks\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vits\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\flow\tests\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\optics\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\internals\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\fuyu\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\altclip\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gpt_neox\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gpt_neo\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\cvt\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\cohere\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\gptsan_japanese\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dab_detr\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\commands\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\utils\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dpr\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_ibis\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\ibert\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\datapipes\iter\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\urllib3\util\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mimi\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_dynamo\polyfills\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\git\index\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\resnet\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\libs\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\rpc\jit\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\layoutxlm\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\autoheuristic\artifacts\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\_testing\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\llava_next\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\inference\_generated\types\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\smith\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\importers\__pycache__
+  - Size before removal: 0.1 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tenacity\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\yarl\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_sql\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\parquet\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantized\dynamic\modules\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\jamba\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\json\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mixtral\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\urllib3\contrib\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\platformdirs\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\megatron_bert\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\cachetools\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\fnet\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\operators\tests\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\scripts\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\external\tests\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\ernie\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\marker\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\fsmt\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\git\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\network\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\hiera\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\ranges\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gemma2\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\marker\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\plotting\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\timesfm\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\units\tests\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\swin2sr\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\switch_transformers\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\units\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\environment\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\formatting\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\tvp\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\yaxis\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vision_text_dual_encoder\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen2\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen3_moe\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\linalg\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\nllb_moe\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcats\line\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\regnet\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\squeezebert\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\swiftformer\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\dateutil\parser\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\seggpt\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\splinter\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\validation\rules\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\canine\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\referencing\tests\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\coloraxis\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\django\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\convnext\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\git\refs\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\models\quantization\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\line\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_numpy\testing\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\matrixlib\tests\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\data\processors\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\align\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\depth_pro\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\flight_recorder\components\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\qdqbert\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\diffllama\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dinov2\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcoords\line\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\h11\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\nezha\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\pygments\styles\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\clipseg\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\__pycache__
+  - Size before removal: 0.09 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\git\repo\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\swinv2\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\xlm_roberta_xl\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\gauge\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\sew\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\git\objects\submodule\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\yaxis\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\aaxis\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\baxis\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\_code\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\holonomic\tests\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\serialization\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\video_llava\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\videomae\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\fx_passes\auto_chunker\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\series\accessors\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\string_\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\visual_bert\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\datapipes\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\base\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_logging\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\table_transformer\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\liealgebras\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\_py\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\kernel\vendored_templates\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\cohere2\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\codegen\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\imagegpt\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\vcs\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\tests\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\mtiLib\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\linalg\tests\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\fft\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\falcon\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dinov2_with_registers\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\checkpoint\_experimental\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\index\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deepseek_v3\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\ernie_m\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_plotly_utils\colors\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen2_audio\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pixtral\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen2_moe\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\xaxis\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\polys\agca\tests\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\radialaxis\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\testing\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multidict\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\merge\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mra\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\masked\maskedtensor\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\artifacts\_generated\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\phimoe\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pegasus_x\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\contourpy\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\integer\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\table\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\zamba\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\xmod\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\zaxis\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\test_utils\scripts\external_deps\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\protocols\websockets\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\interchange\__pycache__
+  - Size before removal: 0.08 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\vera\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\agent\server\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\proto\v5\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\starcoder2\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\agent\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\qwen3\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\tools\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\starlette\middleware\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\speech_encoder_decoder\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\graphormer\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\randlora\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\proto\v6\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dbrx\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wheel\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\stablelm\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\mctct\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\multiprocessing\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\vit_hybrid\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\speech_to_text_2\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\yoso\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\sas\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\connections\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\levit\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\toml\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\llava\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mobilenet_v2\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mluke\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mlcd\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\builder\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\granitemoeshared\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\phi\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\phi3\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\prompt_depth_anything\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\models\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gpt_neox_japanese\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pluggy\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\jetmoe\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\sets\handlers\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantized\reference\modules\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\superglue\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\training\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\box\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\line\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\angularaxis\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\referencing\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\line\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\commands\config\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\boft\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\line\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_subclasses\complex_tensor\_ops\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\fx\passes\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\util\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\agents\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\matplotlylib\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\sphinxext\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\importlib_metadata\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\template\data\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\contourpy\util\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pytz\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\coloraxis\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\timestamp\methods\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bros\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\convnextv2\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\stable\v1\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\biogpt\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\type\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\colorbar\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutedsl\__pycache__
+  - Size before removal: 0.07 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_export\db\examples\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mamba2\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\commands\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\fft\tests\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\_tensor\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\ns\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\pipelines\_wav2vec2\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_functorch\_activation_checkpointing\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\traversal\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\importlib_resources\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\cpmant\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\proto\v4\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\packaging\licenses\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\msgpack\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\watchdog_0_9_0\wandb_watchdog\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\optests\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\plot\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\caxis\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\profiler\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\distro\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\baxis\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mistral3\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\operators\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\utilities\_compilation\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\aaxis\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\lilt\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\test_utils\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\amp\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\testing\tests\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bert_generation\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\artifacts\storage_handlers\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bit\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\urllib3\contrib\emscripten\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dinat\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\filesync\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\varLib\avar\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\encodec\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\efficientnet\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\aya_vision\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\stable\v2\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\ia3\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\protocols\http\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\colpali\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\annotation\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\tapex\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\export\pt2_archive\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\ops\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\nat\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\open_llama\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\aiohttp\_websocket\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\granite\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\granitemoe\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\utils\_expanded_weights\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\unicodedata\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\promise-2.3.0\wandb_promise\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\granite_speech\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\helium\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\hgnet_v2\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\google_genai\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\static_runtime\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\ops\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\tv_tensors\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\metadata\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\focalnet\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\watchdog_0_9_0\wandb_watchdog\utils\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\vendored\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\glpn\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gpt_bigcode\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\glm4\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\glm\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\safetensors\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\nystromformer\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\nougat\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\watcher\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\olmo\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\univnet\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\olmoe\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\olmo2\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\discrete\tests\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\truststore\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\packaging\licenses\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\misc\filesystem\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\demo\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\nemotron\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\colorama\tests\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\importlib_resources\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\recurrent_gemma\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\algebras\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fastapi\openapi\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\poolformer\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pvt\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\cu2qu\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\mark\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\service\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vitpose\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\template\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\boolean\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\trocr\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\dtypes\cast\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\sweeps\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\diffgeom\tests\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vivit\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\floating\__pycache__
+  - Size before removal: 0.06 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\mapbox\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vipllava\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\superpoint\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\assumptions\predicates\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_refs\nn\functional\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\falcon_mamba\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\multiprocessing\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\map\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\utils\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\parser\dtypes\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\xlora\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\array_algos\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\hra\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\compiler\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\json\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\nn\api\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\platformdirs\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fastapi\dependencies\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\nv_universal_gemm\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\contours\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpl_toolkits\axes_grid1\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\automations\_generated\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\decimal\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\data\datasets\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic\deprecated\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\public\registries\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\chunk_sharding_spec_ops\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bitnet\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\adalora\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\autolev\test-examples\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\components\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\tensor\debug\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\image\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\components\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\watchdog\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fft\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\decision_transformer\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\geo\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wheel\_commands\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\traversal\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\intervalmath\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\retribert\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\ohlc\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\intervalmath\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\optics\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\interchange\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\eval\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\timesformer\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\rwkv\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\debug\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\watchdog\utils\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\audio_spectrogram_transformer\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\keras\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\timer\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\miss\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\discrete\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\vblora\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\benchmark\utils\valgrind_wrapper\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\categories\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dac\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\operations\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pointcloud\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\qat\modules\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\assortativity\tests\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\cachecontrol\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\implementations\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\datetimelike_\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\huggingface_hub\inference\_mcp\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_custom_op\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\gitdb\db\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\frame\constructors\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\interchange\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\ijepa\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\autoheuristic\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantizable\modules\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vitmatte\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\ultralytics\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\candlestick\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\runtime\scriptrunner\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tseries\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\base_class\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mobilevitv2\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mgp_str\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mamba\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\backends\qt_editor\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\latex\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\slider\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mpt\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\models\optical_flow\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vitdet\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\annotation\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fastapi\security\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\pruner\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\_utils\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\persimmon\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\external\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\_config\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\automations\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\period\methods\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\paligemma\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\colorLib\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyarrow\tests\interchange\__pycache__
+  - Size before removal: 0.05 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\pipelines\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tqdm\contrib\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\c\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\multipledispatch\tests\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\parser\usecols\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\units\systems\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\cone\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\pipelines\_tts\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\latex\lark\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\_api\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymapbox\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\exporter\_torchlib\ops\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\gitdb\test\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\execution\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\window\moments\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\textnet\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\compliance\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\matplotlylib\mplexporter\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\crypto\tests\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\io\sas\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tornado\platform\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\fourierft\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\line\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\shape\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\colorama\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\mpl_toolkits\axisartist\tests\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\mesh3d\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vitpose_backbone\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\celery\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\experimental\unification\multipledispatch\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\hep\tests\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\smith\realaxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\ai\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\table\cells\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\infra\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\mtia\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\models\segmentation\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\vit_msn\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\c3a\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\api\types\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bert_japanese\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\testing\jpl_units\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2d\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\experimental\unification\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\indexers\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\bone\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\config\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\automations\_filters\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contour\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\table\header\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\legend\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\datapipes\utils\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\pvt_v2\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\algebras\tests\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2dcontour\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\herbert\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\polar\radialaxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\sparsifier\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\operations\install\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\io\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\datapipes\dataframe\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\_numba\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\data_types\helper_types\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmapgl\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\bindings\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\carpet\baxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\xeon\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic\experimental\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymap\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\environment\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pygments\filters\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\tomli\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\old\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcats\line\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmap\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mobilenet_v1\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\assortativity\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\megatron_gpt2\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\resolvelib\resolvers\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\yaxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\urllib3\packages\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\analysis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\web\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\xaxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\zaxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\nllb\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_functorch\_activation_offloading\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\compile_worker\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcoords\line\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\carpet\aaxis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\methods\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\tensor\experimental\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\updatemenu\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\shira\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\axis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\datetimes\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sunburst\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\code_llama\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_pycute\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\coloraxis\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\link\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contourcarpet\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\lokr\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_pytest\_io\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pygments\filters\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\link_analysis\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\interactive\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\coloring\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\sklearn\calculate\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\smmap\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\legend\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_typing\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\wheel\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\urllib3\contrib\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_composable\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\marker\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\data_types\base_types\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\streamtube\colorbar\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\trajectory_transformer\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\matrixlib\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\nn\api\__pycache__
+  - Size before removal: 0.04 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\redis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\line\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\viz\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\commands\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\line\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2d\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\masked\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2dcontour\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\opentelemetry\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\benchmark\examples\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contour\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\pydantic_ai\patches\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\interval\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\download\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\multipledispatch\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\errors\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\period\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\special\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymapbox\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\signal\windows\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\svgLib\path\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnelarea\marker\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\integration_utils\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fastapi\_compat\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\errors\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmap\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\data_sparsifier\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\inputs\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\rewards\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnelarea\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\smmap\test\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\mailbox\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\annotated_types\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\t1Lib\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\registry\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\cuda\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantized\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\unify\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\runtime\scriptrunner_utils\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\qu2cu\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\unify\tests\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\runtime\caching\storage\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\strategies\tests\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\io\clipboard\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\blinker\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnelarea\title\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\accelerator\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\qat\modules\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\quantized\modules\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\stats\sampling\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\strategies\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\components\v2\bidi_component\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\diff\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\line\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\gql-0.2.0\tests\starwars\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\server\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\tests\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\verify\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\sharding_spec\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\units\definitions\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\export\experimental\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\link\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\quantization\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\openai_agents\patches\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\node\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\numa\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\jaraco\text\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\timedeltas\methods\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\webdataset\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexing\interval\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_utils\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\compat\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\internal\system\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmapgl\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\multiprocessing\errors\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\misc\plistlib\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\tomli\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\sharded_tensor\_ops\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyparsing\diagram\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymap\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\cone\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\upernet\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\polar\angularaxis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\minors\tests\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\adaption_prompt\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\supervisors\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bertweet\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\locations\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\newshape\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\streamtube\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\ohlc\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sunburst\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\metadata\importlib\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\timm_wrapper\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\title\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\extras\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\gauge\axis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pie\title\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\coloring\tests\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\data\metrics\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\xaxis\rangeselector\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\artifacts\storage_policies\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\io\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\annotation\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\environment\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\trainable_tokens\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\box\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\map\layer\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\keras\callbacks\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\matplotlylib\mplexporter\renderers\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\offline\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\importers\internals\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\depth_anything\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\wav2vec2_phoneme\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\wav2vec2_with_lm\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\kfp\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\van\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\lightning\fabric\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\poly\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\candlestick\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\table\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\coloraxis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\openai\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\testing\asserts\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\minors\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\annotation\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\mesh3d\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\loha\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\mapbox\layer\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\cpm\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\pathbar\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutlass\lib_extensions\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cuda\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_strobelight\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\tseries\frequencies\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\image\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\updatemenu\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\pathbar\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pie\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\shape\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\node\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pie\marker\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\mbart50\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\baxis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\node\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\link\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_lazy\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\smith\imaginaryaxis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\tseries\holiday\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\sklearn\plot\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\readwrite\json_graph\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\resolvelib\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\interval\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\markupsafe\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pointcloud\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\caxis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\diffusers\resolvers\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\models\squim\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\image\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\models\decoder\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\aaxis\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\delta\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\urllib3\contrib\_securetransport\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\jaraco\text\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\typing_inspection\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\torch\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\hoverlabel\__pycache__
+  - Size before removal: 0.03 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\smith\realaxis\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\folder_based_builder\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\stats\sampling\tests\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\myt5\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\box\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\cells\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\contours\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\timedeltas\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\smith\imaginaryaxis\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\typing\tests\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\mesh3d\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\error_y\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\error_x\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\data\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\contours\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\metaflow\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymapbox\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\template\data\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\hoverlabel\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\backends\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\backends\matplotlibbackend\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\jaraco\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\xaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\jaraco\functools\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\caxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\tensorboard\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\shieldgemma2\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\baxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\title\subtitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\spark\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\_vendor\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contour\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\copy_view\index\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\ternary\aaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnelarea\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\physics\hep\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\yaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\phobert\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydantic\plugin\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\util\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\jupyter\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\data_utils\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\_numba\kernels\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\hello\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\external\langchain\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contourcarpet\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\components\v1\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcoords\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcoords\line\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\pydantic_ai\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\pydantic_ai\spans\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\spark\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\grpc\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\openai_agents\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sankey\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contour\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\accelerate\commands\menu\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pointcloud\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contour\contours\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\middleware\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\projection\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\compat\numpy\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\urllib3\http2\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\line\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\jaraco\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pie\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_vendor\jaraco\functools\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter3d\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\aiohappyeyeballs\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\pathbar\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\algorithms\link_analysis\tests\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\cycler\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\table\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymap\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\mesh3d\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\treemap\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\caps\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\header\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\header\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\interactive\tests\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymapbox\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\cells\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\liealgebras\tests\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\arrays\numpy_\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\slices\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\volume\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\carpet\baxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contourcarpet\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcats\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\carpet\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcats\line\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\navigation\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\contourcarpet\contours\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\ohlc\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sunburst\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\sunburst\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\streamtube\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\candlestick\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\policy\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\streamtube\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\assumptions\relation\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\densitymap\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\benchmarks\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\carpet\aaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\mixed\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\coloraxis\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_vendor\packaging\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\image\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\mmbt\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\ln_tuning\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sync\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\slices\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\cone\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\annotation\hoverlabel\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\nn\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\operator_versions\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\error_y\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2d\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\ctypeslib\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\pygments\filters\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\dimension\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\legend\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\contours\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\pathbar\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\smith\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\utils\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\launcher\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmapgl\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\rpc\examples\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\error_x\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\selection\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nested\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\fillpattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\models\wav2vec2\utils\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\title\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\mps\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\layer\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\optimizers\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\kernels\falcon_mamba\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\util\version\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\execution\experimental\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\node\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\selective_build\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\link\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\error_x\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\error_y\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\attention\experimental\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newshape\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\number\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\image\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\grid\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\barthez\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\bartpho\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\futures\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\cpt\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\einops\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\core\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\isosurface\caps\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\_pydantic\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\error_z\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\layer\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\error_x\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\error_y\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\zaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\marker\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\modules\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tenacity\asyncio\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\agents\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\tools\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\camera\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\hoverlabel\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\sparse\quantized\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\resolution\legacy\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\annotation\hoverlabel\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\title\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\scalar\timedelta\methods\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\minor\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\xaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\scene\yaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\outsidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\slider\currentvalue\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\cone\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmap\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\typing\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pyproject_hooks\_in_process\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\icicle\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_refs\linalg\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\yolov8\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pyproject_hooks\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2dcontour\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\dependency_groups\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\networkx\readwrite\json_graph\tests\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\shape\label\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\otlLib\optimize\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\shape\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\insidetextfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\iniconfig\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\newshape\label\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\cudnn\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\model_averaging\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\f2py\_backends\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\gpt_sw3\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\newshape\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\minor\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2dcontour\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\data\datapipes\map\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jsonschema\benchmarks\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\image\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2d\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\benchmark\op_fuzzers\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmapgl\colorbar\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\distributions\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\textfont\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\pattern\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\polar\radialaxis\title\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram2dcontour\contours\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\activation_sparsifier\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\heatmap\legendgrouptitle\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\_strobelight\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\scheduler\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\rangeselector\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\hoverlabel\font\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\operations\build\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\lookup_table\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\line\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\model_dump\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\error_x\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\error_y\__pycache__
+  - Size before removal: 0.02 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\fx\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchgen\aoti\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_export\db\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\_extension\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\package\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\exporter\_torchlib\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_export\pass_infra\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_distutils\compat\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_subclasses\complex_tensor\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\jit\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\package\analyze\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\promise-2.3.0\wandb_promise\schedulers\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\quantization\fx\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\fastai\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_dispatch\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\huggingface\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\execution\executors\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\diffusers\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\docker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\sharded_tensor\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\statistics\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\supply\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_refs\special\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\lifespan\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\watchdog_0_9_0\wandb_watchdog\tricks\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\_coreml\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\opt_einsum\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\curriculum\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\contrib\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\autograd\_functions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\mkldnn\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\catboost\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\cpu\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\autolev\test-examples\pydy-example-repo\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\_checkpoint\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\_optimizer_overlap\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\_comm_hooks\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\analytics\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\cpu\amp\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\parsing\fortran\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\cuda\amp\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\utilities\_compilation\tests\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\projects\_generated\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\sb3\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\sklearn\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\strategies\branch\tests\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\strategies\branch\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_distutils_hack\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\xgboost\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\sagemaker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\timm_backbone\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\prodigy\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\data_sparsifier\lightning\callbacks\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\data_scheduler\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\pygletplot\tests\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\proto\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\sacred\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\sparse\quantized\dynamic\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\algorithms\_quantization\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\beta\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nativert\backends\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\watchdog\tricks\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\validation\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\jit\mobile\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\dialect\common\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\sagemaker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantized\_reference\modules\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantized\modules\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchvision\datasets\samplers\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\components\types\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\error\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\launch\builder\templates\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\site\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\cohere\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\metrics\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\events\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\utils\data\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\multiprocessing\subprocess_handler\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\integrations\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\patient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\knowledge\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\lightgbm\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\wandb_graphql\pyutils\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\sharded_optim\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\core\benchmarks\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\byt5\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\nn\jit\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\pk\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\artifacts\artifact_manifests\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\autorangeoptions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\rangebreak\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\updatemenu\pad\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\aaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\aaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\rangeselector\button\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\rangeselector\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\rangeslider\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\baxis\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\title\subtitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\title\pad\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\baxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\updatemenu\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\aaxis\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\updatemenu\button\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\baxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\aaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\lighting\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\labelfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\dimension\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\rangebreak\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\autorangeoptions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\yaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\caxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\zaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\zaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\zaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\yaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\zaxis\autorangeoptions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\shape\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\shape\label\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\shape\label\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\xaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\xaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\xaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\xaxis\autorangeoptions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\yaxis\autorangeoptions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\yaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\yaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\aaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\baxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\aaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\template\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\aaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\baxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\caxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\baxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\caxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\baxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\currentvalue\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\currentvalue\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\pad\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\smith\realaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\smith\imaginaryaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\step\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\smith\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\contours\z\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\contours\y\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\gradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\increasing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\decreasing\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\increasing\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\totals\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\decreasing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\fillgradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\connector\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\line\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\line\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\line\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\line\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolar\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\dimension\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\surface\contours\x\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\splom\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterternary\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatterpolargl\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattersmith\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\waterfall\totals\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\rangefont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\line\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\line\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\line\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\line\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\line\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\line\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\line\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\line\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\labelfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\node\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\node\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\link\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\link\colorscale\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\link\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\contours\labelfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\contours\labelfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\contours\labelfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\pathbar\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\image\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\delta\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\image\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\frame\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\outsidetextfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\insidetextfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\delta\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\layer\symbol\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\layer\symbol\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\bounds\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\bounds\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\layer\symbol\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\lonaxis\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\projection\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\hoverlabel\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\legend\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\legend\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\legend\grouptitlefont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\hoverlabel\grouptitlefont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\legend\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\radialaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\radialaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\radialaxis\autorangeoptions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\radialaxis\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\camera\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\annotation\hoverlabel\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\annotation\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\annotation\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newshape\label\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\modebar\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\layer\symbol\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\margin\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newshape\label\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\angularaxis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\angularaxis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newshape\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\lataxis\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\number\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\number\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\caps\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\axis\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\step\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\axis\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\lighting\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\coloraxis\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\coloraxis\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\annotation\hoverlabel\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\annotation\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\annotation\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\coloraxis\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\coloraxis\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\slices\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\slices\x\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\lighting\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\slices\y\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\surface\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\slices\z\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\dimension\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_pyinstaller\tests\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\testing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\api\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\gradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\random\_examples\numba\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\_interchange\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\starts\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\lighting\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\doc\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\random\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\array_with_attr\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pygments\styles\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\pygments\formatters\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\urllib3\packages\backports\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\tomli_w\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\cachecontrol\caches\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\prompt_tuning\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\p_tuning\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objects\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\bar\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\data\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\gradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\express\trendline_functions\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\list\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\gradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\extension\date\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\multitask_prompt_tuning\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\prefix_tuning\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\object\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\indexes\string\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\parallel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\xml\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\slices\y\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\slices\z\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\surface\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\parquet\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\text\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\sql\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\slices\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\slices\x\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\lighting\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\dateutil\zoneinfo\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\json\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyparsing\tools\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pytest\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\types\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\widget\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\crons\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\redis\modules\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\violin\box\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\grpc\aio\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sentry_sdk\integrations\openai_agents\spans\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\cache\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\arrow\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\csv\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\propcache\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\io\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\filesystems\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\charset_normalizer\cli\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\lighting\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multiprocess\dummy\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\matplotlib\style\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\header\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\cells\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\y\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\z\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\x\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\box\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\pathbar\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\tiling\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\caps\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\encodings\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\domain\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\pad\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\gauge\bar\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\gauge\step\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\marker\gradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\grid\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\indicator\gauge\threshold\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\geo\projection\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\gradient\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\cluster\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\funnel\connector\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\histogram\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\pointcloud\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\parcoords\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattercarpet\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scatter\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\newselection\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\map\layer\symbol\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\mapbox\layer\symbol\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\selection\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergeo\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\ohlc\decreasing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\cluster\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\layout\xaxis\rangeslider\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\projection\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\box\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermapbox\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\hoverlabel\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\legendgrouptitle\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\marker\colorbar\title\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattermap\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\scattergl\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\marker\colorbar\title\font\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\candlestick\decreasing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\box\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\candlestick\increasing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\textfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\unselected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\marker\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\colorbar\tickformatstop\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\marker\colorbar\tickfont\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\barpolar\selected\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\box\marker\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\ohlc\increasing\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\line\__pycache__
+  - Size before removal: 0.01 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\generator\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\google\protobuf\compiler\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\connector\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\_src\make_functional\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\_src\eager_transforms\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: .pytest_basetemp
+  - Size before removal: 0 MB
+  - Recover with: pytest run regenerates this temp folder.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\US\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\vegalite\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\plotly\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\annotated_doc\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\altair\typing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: .pytest_cache
+  - Size before removal: 0 MB
+  - Recover with: pytest run regenerates this cache.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contour\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\aiosignal\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\google\protobuf\pyext\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\gitdb\utils\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: .pytest_tmp
+  - Size before removal: 0 MB
+  - Recover with: pytest run regenerates this temp folder.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\google\protobuf\testdata\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\lightposition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\cone\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\trl\rewards\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jsonschema\tests\typing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\connector\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\_src\vmap\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\google\protobuf\util\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\America\Argentina\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Atlantic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\utils\resources\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Arctic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Asia\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\America\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Chile\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\src\cts\replay\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Australia\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Brazil\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Canada\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\America\Indiana\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\pdffolder\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_yaml\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\imagefolder\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\America\Kentucky\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\pandas\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Antarctica\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymap\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\videofolder\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\datasets\packaged_modules\audiofolder\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\America\North_Dakota\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Etc\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\xxhash\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\compile\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\svgLib\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\frozenlist\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\_src\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Pacific\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\_src\aot_autograd\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\functorch\experimental\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Mexico\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fontTools\config\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Europe\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\densitymapbox\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\fastapi\middleware\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\certifi\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_plotly_future_\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\_multiprocess\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Indian\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\contourcarpet\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tzdata\zoneinfo\Africa\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\attrs\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jsonschema_specifications\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\internal\_generated\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\construction\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\decreasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\core\sparse\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\api\interchange\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmapbox\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\api\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\api\extensions\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\api\indexers\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\api\types\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\arrays\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\api\typing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choropleth\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\decreasing\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_vendor\certifi\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\mpmain\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pkg_resources\extern\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pip\_internal\resolution\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\tensorflow\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\express\data\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\lightning\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\colors\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\langchain\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\express\colors\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\integration\gym\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\sdk\backend\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\_libs\tslibs\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\_libs\window\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\increasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\tests\tseries\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pandas\_libs\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\increasing\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\carpet\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choropleth\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\peft\tuners\boft\fbd\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\graph_objs\choroplethmap\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\box\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\candlestick\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multiprocess\tests\test_multiprocessing_forkserver\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\protocols\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\testing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\char\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multiprocess\tests\test_multiprocessing_spawn\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\narwhals\stable\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\promise-2.3.0\wandb_promise\pyutils\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jsonschema_specifications\tests\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\jupyterlab_plotly\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\kiwisolver\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\uvicorn\loops\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\promise-2.3.0\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\multiprocess\tests\test_multiprocessing_fork\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmapbox\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\bar\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\workspaces\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\gql-0.2.0\tests\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\gql-0.2.0\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_core\tests\examples\cython\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_core\tests\examples\limited_api\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\_pyinstaller\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\strings\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\reports\v2\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\random\_examples\cffi\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\graphql-core-1.1\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\transport\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\random\tests\data\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\reports\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\wandb\apis\reports\v1\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\barpolar\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\numpy\rec\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\choroplethmap\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\quantized\dynamic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\quantized\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\qat\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\qat\dynamic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\qat\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\quantized\dynamic\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\intrinsic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\sparse\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantized\dynamic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantizable\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\qat\dynamic\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\nn\quantized\reference\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\utilities\mathml\data\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\utilities\mathml\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\pre_tokenizers\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\normalizers\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\models\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\trainers\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\processors\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolargl\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterpolar\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\decoders\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\tokenizers\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\elastic\agent\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\autograd\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\nn\jit\templates\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\rpc\_testing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergeo\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\flight_recorder\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\cpu\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\kleidiai\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\cusparselt\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\data_sparsifier\lightning\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\ao\pruning\_experimental\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermapbox\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\xnnpack\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\quantized\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattergl\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattermap\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\mkl\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\miopen\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\mha\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\openmp\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\nnpack\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\backends\mps\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\contour\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\lightposition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\caps\x\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\caps\y\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\caps\z\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\connector\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\connector\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\vendor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\testing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\volume\spaceframe\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\box\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\elementary\benchmarks\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\root\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\meanline\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\violin\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\exceptions\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\nbextension\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyparsing\ai\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\components\lib\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\components\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pydeck\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\compat\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\_distutils\_vendor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setuptools\extern\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\pyparsing\ai\show_best_practices\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\rpds\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\setproctitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\increasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\streamlit\external\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\increasing\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\decreasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\decreasing\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\decreasing\marker\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\totals\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\totals\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\totals\marker\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\increasing\marker\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\waterfall\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\diagonal\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\dimension\axis\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\plotting\backends\textbackend\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\solvers\benchmarks\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattersmith\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\sandbox\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatterternary\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\series\benchmarks\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\sandbox\tests\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\logic\utilities\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\cells\fill\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\matrices\benchmarks\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\lightposition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\treemap\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\functions\special\benchmarks\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\header\fill\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\table\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\sympy\integrals\benchmarks\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\lightposition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\leaf\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\splom\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\streamtube\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\x\project\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\y\project\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\surface\contours\z\project\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\root\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sunburst\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\center\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\layer\circle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\layer\fill\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\center\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\geo\projection\rotation\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\grid\domain\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\layer\fill\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\layer\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\kernels\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\map\layer\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\center\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\mapbox\layer\circle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\caps\z\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\contour\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\caps\x\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\caps\y\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\activeselection\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\activeshape\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\colorscale\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\lightposition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\spaceframe\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\isosurface\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\selection\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\lib\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\shape\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\yaxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\utils\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\zaxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_refs\nn\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\aaxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\baxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\shape\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_vendor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\slider\transition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newshape\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\polar\radialaxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\aspectratio\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newselection\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newselection\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\newshape\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\camera\up\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\xaxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torchaudio\_internal\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\camera\center\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\camera\eye\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\scene\camera\projection\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\xbins\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\xbins\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\ybins\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\ybins\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2d\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmap\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnel\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\funnelarea\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\heatmapgl\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram\cumulative\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\delta\increasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\bar\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\bar\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\image\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\image\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\delta\decreasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\bort\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\deprecated\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\step\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\threshold\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\indicator\gauge\threshold\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\xbins\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\ybins\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dit\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\histogram2dcontour\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\root\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\tiling\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\leaf\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\icicle\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\transformers\models\dialogpt\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\ternary\caxis\title\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\backends\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\qat\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\qat\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\jit\_passes\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nativert\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\monitor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\qat\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\qat\dynamic\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\qat\dynamic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantized\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantizable\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantizable\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\quantized\dynamic\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\quantized\dynamic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\quantized\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\qat\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\intrinsic\quantized\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\sharding_plan\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_sharding_spec\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_sharded_tensor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\projection\z\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\selected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\selected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scattercarpet\selected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_shard\checkpoint\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_ops\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_composable\fsdp\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\unselected\textfont\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\dialect\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\fx\passes\backends\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter\unselected\marker\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\projection\x\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\distributed\_tensor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\projection\y\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\scatter3d\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\func\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\export\passes\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\decreasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\decreasing\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\increasing\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\lightposition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_awaits\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\increasing\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\ohlc\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\serialization\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\xpu\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\mtia\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutlass\lib_extensions\cutlass_mock_imports\scipy\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\title\subtitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\transition\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\uniformtext\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\layout\xaxis\rangeslider\yaxis\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\contour\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\mesh3d\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutlass\lib_extensions\cutlass_mock_imports\pydot\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutlass\lib_extensions\cutlass_mock_imports\cuda\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\_inductor\codegen\cutlass\lib_extensions\cutlass_mock_imports\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\optim\_multi_tensor\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\marker\border\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\signal\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pie\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantized\_reference\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantized\dynamic\modules\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\nn\quantized\dynamic\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\pointcloud\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\onnx\_internal\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\sankey\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\test_module\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\legendgrouptitle\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\_shard\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcats\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\benchmark\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\utils\backcompat\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\data\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\codegen\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\unselected\line\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\stream\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\torch\testing\_internal\distributed\nn\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.
+- Path: E:\Projects\Clinical Trial Simulator\.venv\Lib\site-packages\plotly\validators\parcoords\unselected\__pycache__
+  - Size before removal: 0 MB
+  - Recover with: Recreated automatically by Python when modules are imported/executed.

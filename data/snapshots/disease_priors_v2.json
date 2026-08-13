@@ -1,0 +1,183 @@
+{
+  "type2_diabetes": {
+    "drug_name": "Metformin + GLP-1 Combo",
+    "components": {
+      "biguanide": {
+        "efficacy_weight": 0.42,
+        "toxicity_weight": 0.05,
+        "target_pathway": "AMPK Activation",
+        "chembl_id": "CHEMBL1431",
+        "chembl_ic50_nM": 18000000.0,
+        "chembl_alogp": -1.03,
+        "note": "Metformin acts via AMPK/mitochondrial pathway, not direct receptor binding. IC50 assay underestimates in-vivo efficacy. Clinical weight set from HbA1c reduction meta-analysis."
+      },
+      "glp1_agonist": {
+        "efficacy_weight": 0.882,
+        "toxicity_weight": 0.15,
+        "target_pathway": "GLP-1 Receptor Agonist",
+        "chembl_id": "CHEMBL3989823",
+        "chembl_ic50_nM": 96.88,
+        "chembl_alogp": null
+      },
+      "excipient": {
+        "efficacy_weight": 0.0,
+        "toxicity_weight": 0.0,
+        "target_pathway": "Inactive Formulation",
+        "chembl_id": ""
+      }
+    },
+    "vitals_impact": {
+      "glucose": {
+        "base_range": [
+          140.0,
+          240.0
+        ],
+        "target_max_reduction": 90.0,
+        "unit": "mg/dL"
+      },
+      "heart_rate": {
+        "base_range": [
+          60.0,
+          90.0
+        ],
+        "toxicity_elevation_max": 25.0
+      }
+    }
+  },
+  "hypertension": {
+    "drug_name": "Lisinopril + Amlodipine Combo",
+    "components": {
+      "ace_inhibitor": {
+        "efficacy_weight": 0.593,
+        "toxicity_weight": 0.131,
+        "target_pathway": "Angiotensin Converting Enzyme Inhibitor",
+        "chembl_id": "CHEMBL1235",
+        "chembl_ic50_nM": 4213.6,
+        "chembl_alogp": 1.24
+      },
+      "calcium_blocker": {
+        "efficacy_weight": 0.659,
+        "toxicity_weight": 0.1635,
+        "target_pathway": "L-type Calcium Channel Blocker",
+        "chembl_id": "CHEMBL174",
+        "chembl_ic50_nM": 2198.9,
+        "chembl_alogp": 2.27
+      },
+      "excipient": {
+        "efficacy_weight": 0.0,
+        "toxicity_weight": 0.0,
+        "target_pathway": "Inactive Formulation",
+        "chembl_id": ""
+      }
+    },
+    "vitals_impact": {
+      "systolic_bp": {
+        "base_range": [
+          135.0,
+          175.0
+        ],
+        "target_max_reduction": 45.0,
+        "unit": "mmHg"
+      },
+      "diastolic_bp": {
+        "base_range": [
+          85.0,
+          110.0
+        ],
+        "target_max_reduction": 25.0,
+        "unit": "mmHg"
+      },
+      "heart_rate": {
+        "base_range": [
+          60.0,
+          85.0
+        ],
+        "toxicity_elevation_max": 20.0
+      }
+    }
+  },
+  "nsclc": {
+    "drug_name": "Osimertinib + Cytotoxic Agent",
+    "components": {
+      "egfr_inhibitor": {
+        "efficacy_weight": 0.889,
+        "toxicity_weight": 0.27549999999999997,
+        "target_pathway": "EGFR Tyrosine Kinase Inhibitor",
+        "chembl_id": "CHEMBL3301594",
+        "chembl_ic50_nM": 82.88,
+        "chembl_alogp": 4.51
+      },
+      "cytotoxic": {
+        "efficacy_weight": 0.3,
+        "toxicity_weight": 0.6,
+        "target_pathway": "DNA Alkylation / Mitotic Inhibition",
+        "chembl_id": "CHEMBL112"
+      },
+      "excipient": {
+        "efficacy_weight": 0.0,
+        "toxicity_weight": 0.0,
+        "target_pathway": "Inactive Formulation",
+        "chembl_id": ""
+      }
+    },
+    "vitals_impact": {
+      "tumor_size": {
+        "base_range": [
+          3.0,
+          10.0
+        ],
+        "target_max_reduction": 6.0,
+        "unit": "cm"
+      },
+      "heart_rate": {
+        "base_range": [
+          60.0,
+          95.0
+        ],
+        "toxicity_elevation_max": 30.0
+      }
+    }
+  },
+  "dengue": {
+    "drug_name": "Qdenga Vaccine + Antiviral",
+    "components": {
+      "attenuated_virus": {
+        "efficacy_weight": 0.6,
+        "toxicity_weight": 0.1,
+        "target_pathway": "Neutralizing Antibody Stimulation",
+        "chembl_id": "CHEMBL4297581"
+      },
+      "antiviral": {
+        "efficacy_weight": 0.95,
+        "toxicity_weight": 0.16999999999999998,
+        "target_pathway": "Viral Replication Inhibitor",
+        "chembl_id": "CHEMBL1647",
+        "chembl_ic50_nM": 5.35,
+        "chembl_alogp": 2.4
+      },
+      "excipient": {
+        "efficacy_weight": 0.0,
+        "toxicity_weight": 0.0,
+        "target_pathway": "Inactive Formulation",
+        "chembl_id": ""
+      }
+    },
+    "vitals_impact": {
+      "platelets": {
+        "base_range": [
+          100000.0,
+          130000.0
+        ],
+        "target_max_reduction": -80000.0,
+        "unit": "cells/mcL"
+      },
+      "heart_rate": {
+        "base_range": [
+          60.0,
+          90.0
+        ],
+        "toxicity_elevation_max": 20.0
+      }
+    }
+  }
+}
